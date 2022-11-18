@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="root" stylesheets="@telas.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.TelaMenuController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@telas.css" />
+          </stylesheets>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="mCadastros" mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="mCadSalas" mnemonicParsing="false" onAction="#chamaCadSalas" text="Salas" />
+            </items>
+          </Menu>
+          <Menu fx:id="mConsultas" mnemonicParsing="false" text="Consultas">
+            <items>
+              <MenuItem fx:id="mConsSalas" mnemonicParsing="false" onAction="#chamaConsSalas" text="Salas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sobre" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

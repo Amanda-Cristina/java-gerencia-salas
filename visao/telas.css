@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root {
+    -fx-background-color : aquamarine;
+}
+
+.status{
+    -fx-font-family: "Helvetica";
+    -fx-font-style: italic;
+    -fx-font-size: small;
+    -fx-text-align: right;
+    -fx-text-fill: red;
+    -fx-alignment: center;
+}
+
+.telasInternas{
+    -fx-background-color: white;
+}
